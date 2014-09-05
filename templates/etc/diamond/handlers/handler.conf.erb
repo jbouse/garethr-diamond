@@ -4,7 +4,7 @@
 <%   end
    end -%>
 <% if defined?(@sections)
-     @sections.keys.each do |k| -%>
+     @sections.keys.sort.each do |k| -%>
 
 <%= "#{k}" %>
 <%     @sections[k].keys.sort.each do |v| -%>
